@@ -133,6 +133,10 @@
       padding: 1rem;
       background-color: #f8f9fa;
     }
+    /* 이미지 갤러리 프로젝트가 2그리드 사용하도록 */
+    .project.image-gallery-project {
+      grid-column: span 2;
+    }
     .gallery-item {
       position: relative;
       overflow: hidden;
@@ -173,6 +177,10 @@
       .project-content h2 {
         font-size: 1.1rem;
       }
+      /* 모바일에서는 이미지 갤러리도 1그리드로 */
+      .project.image-gallery-project {
+        grid-column: span 1;
+      }
     }
   </style>
 </head>
@@ -204,7 +212,7 @@
     </div>
 
     <!-- 이미지 갤러리 프로젝트 -->
-    <div class="project">
+    <div class="project image-gallery-project">
       <div class="image-gallery">
         <div class="gallery-item">
           <img src="img/toner_water_1.png" alt="자작나무 수분 토너">
@@ -251,7 +259,7 @@
 
     <!-- 프로젝트 3 -->
     <div class="project">
-      <iframe src="https://youtu.be/HiyEDXflZOw" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/HiyEDXflZOw?si=8dx7_P5kxziVU6qa" allowfullscreen></iframe>
       <div class="project-content">
         <h2><i class="fa-solid fa-pen-ruler"></i> 제이스톡 어플 웹사이트 메인 시퀀스 </h2>
         <p class="project-info"><i class="fa-regular fa-calendar"></i> 2023.06 ~ 2023.07</p>
@@ -261,7 +269,7 @@
 
     <!-- 프로젝트 4 -->
     <div class="project">
-      <iframe src="https://youtu.be/hGbc2IqIVb4" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/hGbc2IqIVb4?si=K1SbO9bUeqkNudvo" allowfullscreen></iframe>
       <div class="project-content">
         <h2><i class="fa-solid fa-pen-ruler"></i> 세상의 모든 수수료 세모 웹사이트 메인 시퀀스 애니메이션</h2>
         <p class="project-info"><i class="fa-regular fa-calendar"></i> 2023.06 ~ 2023.06</p>
