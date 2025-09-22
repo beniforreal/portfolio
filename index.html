@@ -243,10 +243,16 @@
     .profile-avatar {
       text-align: center;
     }
+    .profile-avatar img {
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
     .profile-avatar i {
       font-size: 4rem;
       margin-bottom: 1rem;
       opacity: 0.9;
+      display: none; /* 이미지가 있을 때는 아이콘 숨김 */
     }
     .profile-info h2 {
       margin: 0 0 1rem;
@@ -276,6 +282,10 @@
       }
       .profile-info h2 {
         font-size: 1.5rem;
+      }
+      .profile-avatar img {
+        width: 150px;
+        height: 150px;
       }
     }
     @keyframes fadeIn {
@@ -314,7 +324,8 @@
     <div class="profile-section">
       <div class="profile-content">
         <div class="profile-avatar">
-          <i class="fa-solid fa-user-circle"></i>
+          <img src="img/profile.png" alt="박찬양 프로필 사진" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <i class="fa-solid fa-user-circle" style="display: none;"></i>
         </div>
         <div class="profile-info">
           <h2>박찬양</h2>
@@ -328,6 +339,7 @@
           <p><i class="fa-solid fa-envelope"></i> 21. SBS아카데미 | 노원 영상 강사</p>
           <p><i class="fa-solid fa-envelope"></i> 22. 제이스톡,미스고 | 에셋 제작 및 웹앱출시</p>
           <p><i class="fa-solid fa-envelope"></i> 23. 세상의모든수수료 | 웹앱출시</p>
+          <p><i class="fa-solid fa-envelope"></i> 23. 아파트아이 | 브랜드필름 CG 작업</p>
           <p><i class="fa-solid fa-envelope"></i> 24. 와이우즈 | 파라다이스 시티,롯데,LG,티스테이션 등 여러 기업 컨텐츠 영상 종편</p>
           <p><i class="fa-solid fa-envelope"></i> 24. 개미톡 | 컨텐츠 영상, 디자인 제작, 모의투자 사이트 리뉴얼</p>
           <p><i class="fa-solid fa-envelope"></i> 25. 프리랜서 | 영상 편집, 디자인 제작</p>
@@ -362,7 +374,7 @@
       <div class="project-content">
         <h2><i class="fa-solid fa-pen-ruler"></i> 다이이치 회사 및 모터코어 자동화 소개 영상</h2>
         <p class="project-info"><i class="fa-regular fa-calendar"></i> 2025.08 ~ 2025.09</p>
-        <p class="project-info"><i class="fa-solid fa-list"></i>공정 모델링 30% 기여 (클라이언트사 자료 사용 70%) | 3D 및 종편 100% 기여 | 믹싱 0% 기여</p>
+        <p class="project-info"><i class="fa-solid fa-list"></i>공정 모델링 30% 기여 | 3D 및 종편 100% 기여 | 믹싱 0% 기여</p>
       </div>
     </div>
 
@@ -423,9 +435,9 @@
       </div>
     </div>
 
-    <!-- 프로젝트 5
+    <!-- 프로젝트 5 -->
     <div class="project">
-        <iframe src="https://youtube.com/shorts/IIytUYi3C_0?si=Qc1TRLOkH4GWDmcb" allowfullscreen></iframe>
+        <iframe src="https://youtube.com/embed/IIytUYi3C_0?si=Qc1TRLOkH4GWDmcb" allowfullscreen></iframe>
         <div class="project-content">
         <h2><i class="fa-solid fa-pen-ruler"></i> 파라다이스 시티 ART NIGHT 출품 소개 쇼츠 </h2>
         <p class="project-info"><i class="fa-regular fa-calendar"></i> 2024.06 ~ 2024.06</p>
@@ -433,36 +445,48 @@
         </div>
     </div>
 
-     <!-- 프로젝트 6
+     <!-- 프로젝트 6 -->
      <div class="project">
-        <iframe src="https://youtube.com/shorts/HzlrOaQ0COI?si=tXdjNLDwvZcJocxO" allowfullscreen></iframe>
+        <iframe src="https://youtube.com/embed/HzlrOaQ0COI?si=tXdjNLDwvZcJocxO" allowfullscreen></iframe>
         <div class="project-content">
         <h2><i class="fa-solid fa-pen-ruler"></i> 파라다이스 시티 오르골 시티 쇼츠 </h2>
         <p class="project-info"><i class="fa-regular fa-calendar"></i> 2024.06 ~ 2024.06</p>
         <p class="project-info"><i class="fa-solid fa-list"></i>종편 100% 기여</p>
         </div>
-    </div> -->
+    </div>
     
     <!-- 프로젝트 6 -->
     <div class="project">
-      <iframe src="https://www.youtube.com/embed/HiyEDXflZOw?si=8dx7_P5kxziVU6qa" allowfullscreen></iframe>
-      <div class="project-content">
-        <h2><i class="fa-solid fa-pen-ruler"></i> 제이스톡 어플 웹사이트 메인 시퀀스 </h2>
-        <p class="project-info"><i class="fa-regular fa-calendar"></i> 2023.06 ~ 2023.07</p>
-        <p class="project-info"><i class="fa-solid fa-list"></i>3D 및 종편 100% 기여</p>
+        <iframe src="https://www.youtube.com/embed/pC2W9fS1SWk?si=o9FBRjjEBj6Kp51b" allowfullscreen></iframe>
+        <div class="project-content">
+          <h2><i class="fa-solid fa-pen-ruler"></i> 아파트아이 브랜드필름 CG 작업 </h2>
+          <p class="project-info"><i class="fa-regular fa-calendar"></i> 2023.06 ~ 2023.06</p>
+          <p class="project-info"><i class="fa-solid fa-list"></i>3D CG 100% 기여</p>
+        </div>
       </div>
-    </div>
 
     <!-- 프로젝트 7 -->
     <div class="project">
       <iframe src="https://www.youtube.com/embed/hGbc2IqIVb4?si=K1SbO9bUeqkNudvo" allowfullscreen></iframe>
       <div class="project-content">
         <h2><i class="fa-solid fa-pen-ruler"></i> 세상의 모든 수수료 세모 웹사이트 메인 시퀀스 애니메이션</h2>
-        <p class="project-info"><i class="fa-regular fa-calendar"></i> 2023.06 ~ 2023.06</p>
+        <p class="project-info"><i class="fa-regular fa-calendar"></i> 2022.09 ~ 2022.09</p>
         <p class="project-info"><i class="fa-solid fa-list"></i> 3D 및 종편 100% 기여</p>
       </div>
     </div>
+
+    <!-- 프로젝트 6 -->
+    <div class="project">
+        <iframe src="https://www.youtube.com/embed/HiyEDXflZOw?si=8dx7_P5kxziVU6qa" allowfullscreen></iframe>
+        <div class="project-content">
+          <h2><i class="fa-solid fa-pen-ruler"></i> 제이스톡 어플 웹사이트 메인 시퀀스 </h2>
+          <p class="project-info"><i class="fa-regular fa-calendar"></i> 2022.06 ~ 2022.06</p>
+          <p class="project-info"><i class="fa-solid fa-list"></i>3D 및 종편 100% 기여</p>
+        </div>
+      </div>
   </div>
+
+  
 
   <!-- 이미지 모달 -->
   <div id="imageModal" class="modal">
